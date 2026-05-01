@@ -18,19 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Chat app',
       theme: AppTheme.lightTheme,
       themeMode: ThemeMode.light,
       initialRoute: AppPages.initial,
       getPages: AppPages.routes,
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'Tram ia dun!',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
     );
   }
 }
